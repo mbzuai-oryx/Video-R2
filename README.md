@@ -19,13 +19,13 @@ Given the video and the question *“How many transactions does Visa have in one
 
 ---
 
-## Abstract
+## Abstract 📘
 
 Reasoning over dynamic visual content remains a central challenge for multimodal large language models. Recent thinking models generate explicit reasoning traces for interpretability, but their reasoning often appears convincing while being logically inconsistent or weakly grounded in visual evidence. We identify and formalize these issues through two diagnostic metrics: **Think–Answer Consistency (TAC)**, which measures the alignment between reasoning and answers, and **Video Attention Score (VAS)**, which captures how much the reasoning depends on visual rather than textual cues. Analysis across **11 video reasoning benchmarks** shows that current models rely heavily on linguistic priors instead of visual content. To address this, we propose a reinforcement learning approach that enhances temporal precision and reasoning consistency. Our approach combines timestamp aware supervised fine tuning with Group Relative Policy Optimization guided by a new **Temporal Alignment Reward (TAR)**. This dual stage post training process promotes temporally aligned and causally coherent video reasoning. The resulting model, **Video-R2**, achieves consistently higher TAC, VAS, and accuracy across multiple benchmarks, showing that improvements in temporal alignment and reasoning coherence lead to more accurate and trustworthy video understanding.
 
 ---
 
-## Method Overview
+## Method Overview 🛠️
 
 **Video-R2** improves video reasoning through:
 
@@ -42,13 +42,13 @@ The resulting model **Video-R2**, produces coherent, visually grounded, and accu
 
 ---
 
-## Model, Data, and Code
+## Model, Data, and Code 💾
 
 The model, data and training/evaluation codes will be released soon. Stay tuned! 🚀
 
 ---
 
-## Citation
+## Citation ✏️
 
 If you find Video-R2 helpful in your research, please cite:
 
