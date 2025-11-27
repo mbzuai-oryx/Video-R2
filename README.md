@@ -1,9 +1,19 @@
 # Video-R2
 Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models
 
-![Front Page Figure](video_r2_figure_1.png)
+<!-- <img src="images/icon.png" height="40"> -->
+<p align="center">
+    <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
+</p>
+ 
+#### [Muhammad Maaz](https://www.mmaaz60.com), [Hanoona Rasheed](https://github.com/hanoonaR), [Fahad Khan](https://sites.google.com/view/fahadkhans/home), [Salman Khan](https://salman-h-khan.github.io/)
+ 
+#### **MBZUAI, Linköping University, Australian National University**
+ 
+[![Paper](https://img.shields.io/badge/📄_arXiv-Paper-blue)](TBD)
 
-## Figure Caption
+![Front Page Figure](video_r2_figure_1.png)
+---
 
 **Inconsistent reasoning in prior video LLMs and improved visual reliance with Video-R2.**  
 Given the video and the question *“How many transactions does Visa have in one day?”* both **Video-R1** and **VideoChat-R1** conclude option A during their reasoning but ultimately predict option E, showing that the model’s reasoning and final answer do not match. This behavior occurs because these models rely heavily on textual context and prior knowledge while attending weakly to the video. In contrast, **Video-R2** correctly identifies the on screen visual cue at `01:45` (*“23,666 transactions/sec”*), performs temporal conversion, and arrives at the correct daily value. The box plot on the right shows the average attention from generated tokens to video tokens across all attention heads in the final transformer layer. Compared with baselines, **Video-R2** assigns higher and more distributed attention to video tokens, indicating stronger and more adaptive visual reliance. While earlier models often produce plausible yet inconsistent reasoning, **Video-R2** reasons coherently and grounds its decisions in actual video evidence.
