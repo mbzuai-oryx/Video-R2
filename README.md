@@ -1,5 +1,4 @@
-# Video-R2
-Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models
+# Video-R2: Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models
 
 <!-- <img src="images/icon.png" height="40"> -->
 <p align="center">
@@ -12,7 +11,7 @@ Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models
  
 [![Paper](https://img.shields.io/badge/📄_arXiv-Paper-blue)](TBD)
 
-![Front Page Figure](video_r2_figure_1.png)
+![Front Page Figure](images/video_r2_figure_1.png)
 ---
 
 **Inconsistent reasoning in prior video LLMs and improved visual reliance with Video-R2.**  
@@ -45,7 +44,7 @@ The resulting model **Video-R2**, produces coherent, visually grounded, and accu
 
 ## Model, Data, and Code
 
-The model, data and training/evaluation codes will be released soon. Stay tuned~
+The model, data and training/evaluation codes will be released soon. Stay tuned! 🚀
 
 ---
 
@@ -54,11 +53,16 @@ The model, data and training/evaluation codes will be released soon. Stay tuned~
 If you find Video-R2 helpful in your research, please cite:
 
 ```bibtex
-@article{Maaz2025Video-R1,
+@article{maaz2025video-r2,
   title={Video-R2: Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models},
   author={Maaz, Muhammad and Rasheed, Hanoona and Khan, Fahad Shahbaz and Khan, Salman},
-  journal={arxiv},
-  year={2025},
-  url={https://arxiv.org/abs/xxxx.xxxxx}
+  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2025}
 }
 ```
+
+---
+
+[<img src="images/IVAL_logo.png" width="200" height="100">](https://www.ival-mbzuai.com)
+[<img src="images/Oryx_logo.png" width="100" height="100">](https://github.com/mbzuai-oryx)
+[<img src="images/MBZUAI_logo.png" width="360" height="85">](https://mbzuai.ac.ae)
