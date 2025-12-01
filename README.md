@@ -9,7 +9,7 @@
  
 #### **MBZUAI, Linköping University, Australian National University**
  
-[![Paper](https://img.shields.io/badge/📄_arXiv-Paper-blue)](TBD)
+[![Paper](https://img.shields.io/badge/📄_arXiv-Paper-blue)](https://arxiv.org/abs/2511.23478)
 
 ![Front Page Figure](images/video_r2_figure_1.png)
 ---
@@ -56,7 +56,7 @@ If you find Video-R2 helpful in your research, please cite:
 @article{maaz2025video-r2,
   title={Video-R2: Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models},
   author={Maaz, Muhammad and Rasheed, Hanoona and Khan, Fahad Shahbaz and Khan, Salman},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  journal={arXiv preprint arXiv:2511.23478},
   year={2025}
 }
 ```
