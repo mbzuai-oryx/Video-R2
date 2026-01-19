@@ -1,0 +1,8 @@
+include: _default_template_yaml
+task: mvbench_fine_grained_pose_think
+dataset_name: fine_grained_pose
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: fine_grained_pose
+    post_prompt: "\nPlease think about this question as if you were a human pondering deeply. Engage in an internal dialogue using expressions such as 'let me think', 'wait', 'Hmm', 'oh, I see', 'let's break it down', etc, or other natural language thought expressions. It's encouraged to include self-reflection or verification in the reasoning process. Provide your detailed reasoning between the <think> and </think> tags, and then give your final answer between the <answer> and </answer> tags."

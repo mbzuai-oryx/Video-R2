@@ -1,0 +1,16 @@
+dataset_path: lmms-lab/VideoMMMU
+dataset_kwargs:
+  token: True
+  video: True
+  cache_dir: video_mmmu
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: "You should watch and learn the video content. Then apply what you learned to "
+    post_prompt: "\nPlease think about this question as if you were a human pondering deeply. Engage in an internal dialogue using expressions such as 'let me think', 'wait', 'Hmm', 'oh, I see', 'let's break it down', etc, or other natural language thought expressions. It's encouraged to include self-reflection or verification in the reasoning process. Provide your detailed reasoning between the <think> and </think> tags, and then give your final answer between the <answer> and </answer> tags."
+    perception_and_comprehension_prompt: "\nPlease ignore the Quiz question in last frame of the video."
+    mcq_prompt: "answer the following multi-choice question. The image for this question is at the end of the video."
+    open_ended_prompt: "answer the following open-ended question. The image for this question is at the end of the video."
+generation_kwargs:
+  max_new_tokens: 2048
+  temperature: 0
+  do_sample: False

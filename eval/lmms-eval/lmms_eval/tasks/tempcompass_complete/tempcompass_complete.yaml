@@ -1,0 +1,27 @@
+dataset_path: mmaaz60/tempcompass
+dataset_name: mcq
+test_split: test
+dataset_kwargs:
+  token: False
+  cache_dir: tempcompass_complete
+  video: True
+task: tempcompass_complete
+output_type: generate_until
+doc_to_visual: !function utils.tempcompass_doc_to_visual
+doc_to_text: !function utils.tempcompass_doc_to_text
+doc_to_target: "answer"
+generation_kwargs:
+  max_new_tokens: 1024
+  temperature: 0
+  do_sample: false
+process_results: !function utils.tempcompass_process_results
+metric_list:
+  - metric: tempcompass_perception_score
+    aggregation: !function utils.tempcompass_mcq_aggregate_results
+    higher_is_better: true
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: ""
+    post_prompt: "Do not generate any intermediate thinking. \nAnswer with the option's letter (e.g., A, B, C, D, etc.) from the given choices directly."
+metadata:
+  - version: 0.0

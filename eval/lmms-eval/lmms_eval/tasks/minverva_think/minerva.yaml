@@ -1,0 +1,27 @@
+dataset_path: mmaaz60/minerva
+dataset_name: mcq
+test_split: test
+dataset_kwargs:
+  token: False
+  cache_dir: minerva
+  video: True
+task: minerva_think
+output_type: generate_until
+doc_to_visual: !function utils.minerva_doc_to_visual
+doc_to_text: !function utils.minerva_doc_to_text
+doc_to_target: "answer"
+generation_kwargs:
+  max_new_tokens: 1024
+  temperature: 0
+  do_sample: False
+process_results: !function utils.minerva_process_results
+metric_list:
+  - metric: minerva_perception_score
+    aggregation: !function utils.minerva_mcq_aggregate_results
+    higher_is_better: true
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: ""
+    post_prompt: "\nPlease think about this question as if you were a human pondering deeply. Engage in an internal dialogue using expressions such as 'let me think', 'wait', 'Hmm', 'oh, I see', 'let's break it down', etc, or other natural language thought expressions. It's encouraged to include self-reflection or verification in the reasoning process. Provide your detailed reasoning between the <think> and </think> tags, and then give your final answer between the <answer> and </answer> tags."
+metadata:
+  - version: 0.0

@@ -1,0 +1,27 @@
+# Download the clone of scivideobench from mmaaz60/scivideobench and replace the dataset_path to the local directory path.
+dataset_path: mmaaz60/scivideobench
+dataset_kwargs:
+  load_from_disk: True
+  token: True
+  cache_dir: scivideobench
+task: scivideobench_think
+test_split: test
+output_type: generate_until
+doc_to_visual: !function utils.scivideobench_doc_to_visual
+doc_to_text: !function utils.scivideobench_doc_to_text
+doc_to_target: "answer"
+generation_kwargs:
+  max_new_tokens: 1024
+  temperature: 0
+  do_sample: false
+process_results: !function utils.scivideobench_process_results
+metric_list:
+  - metric: scivideobench_acc
+    aggregation: !function utils.scivideobench_aggregate_results
+    higher_is_better: true
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: ""
+    post_prompt: "\nAnswer with the option's letter from the given choices directly.\nPlease think about this question as if you were a human pondering deeply. Engage in an internal dialogue using expressions such as 'let me think', 'wait', 'Hmm', 'oh, I see', 'let's break it down', etc, or other natural language thought expressions. It's encouraged to include self-reflection or verification in the reasoning process. Provide your detailed reasoning between the <think> and </think> tags, and then give your final answer between the <answer> and </answer> tags."
+metadata:
+  version: 0.1

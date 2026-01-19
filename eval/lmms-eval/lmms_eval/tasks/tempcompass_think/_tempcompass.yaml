@@ -1,0 +1,6 @@
+group: tempcompass_think
+task:
+- tempcompass_multi_choice_think
+- tempcompass_yes_no_think
+- tempcompass_caption_matching_think
+- tempcompass_captioning_think

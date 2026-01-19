@@ -1,0 +1,5 @@
+group: video_mmmu_think
+task:
+- video_mmmu_adaptation_think
+- video_mmmu_comprehension_think
+- video_mmmu_perception_think
