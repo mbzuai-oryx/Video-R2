@@ -19,7 +19,7 @@
 - **Code:** for [evaluation](eval/README.md), [timestamp-aware SFT + GRPO](train/README.md) and [gradio demo](demo/README.md).
 - **Models:** 
   - **Video-R2 (final model):** https://huggingface.co/MBZUAI/Video-R2
-  - **Video-R2-SFT (after SFT):** https://huggingface.co/mmaaz60/Video-R2-SFT
+  - **Video-R2-SFT (after SFT):** https://huggingface.co/MBZUAI/Video-R2-SFT
 - **Dataset:** https://huggingface.co/datasets/MBZUAI/Video-R2-Dataset
 
 
