@@ -219,7 +219,7 @@ If you find Video-R2 helpful, please cite:
 
 ---
 
-[<img src="../images/IVAL_logo.png" width="242" height="121">](https://www.ival-mbzuai.com)
+[<img src="../images/IVAL_logo.png" width="242" height="121">](https://www.ival-mbzuai.net)
 [<img src="../images/Oryx_logo.png" width="121" height="121">](https://github.com/mbzuai-oryx)
 [<img src="../images/MBZUAI_logo.png" width="360" height="121">](https://mbzuai.ac.ae)
 
